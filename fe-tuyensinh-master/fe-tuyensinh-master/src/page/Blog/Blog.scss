@@ -1,0 +1,21 @@
+.blog-page-wp {
+
+    .thumb {
+        max-height   : 50vh;
+        object-fit   : cover;
+        border-radius: 4px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .download-file {
+        border          : 1px solid #ccc;
+        display         : inline-block;
+        padding         : 20px 30px;
+        margin-bottom   : 20px;
+        border-radius   : 10px;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+}

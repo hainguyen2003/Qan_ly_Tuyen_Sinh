@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "53861e18-b0e3-4dce-bc78-2c463d874e05",
+		"name": "Tuyển Sinh",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19767007"
+	},
+	"item": [
+		{
+			"name": "Đăng Ký",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "truongson@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123445",
+							"type": "text"
+						},
+						{
+							"key": "firstName",
+							"value": "Trường",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "Sơn",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Đăng Nhập",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "truongson@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123445",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload File",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "filesUploaded",
+							"description": "sau khi public đường link là http://localhost:8080/files/filename",
+							"type": "file",
+							"src": "/C:/Users/truon/Downloads/1684311839banner-academic-2023.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/upload-file",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"upload-file"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

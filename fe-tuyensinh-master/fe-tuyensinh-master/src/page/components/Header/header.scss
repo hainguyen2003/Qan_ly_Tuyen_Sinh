@@ -1,0 +1,77 @@
+.header-wp {
+    height          : 80px;
+    box-shadow      : 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+    position        : sticky;
+    z-index         : 999;
+    width           : 100%;
+    top             : 0;
+    left            : 0;
+    right           : 0;
+    background-color: #f5f5f5;
+
+    .container,
+    .row {
+        height: 100%;
+    }
+
+    .left-header {
+        display    : flex;
+        align-items: center;
+
+        img {
+            height    : 53px;
+            object-fit: contain;
+        }
+    }
+
+    .right-header {
+        ul {
+            padding        : 0;
+            margin         : 0;
+            display        : flex;
+            justify-content: flex-end;
+            width          : 100%;
+            height         : 100%;
+            gap            : 20px;
+            list-style     : none;
+            align-items    : center;
+
+            a {
+                color          : #333;
+                font-weight    : 700;
+                text-decoration: none;
+
+                &:hover {
+                    color: #ee4d2d;
+                }
+            }
+
+            .search-header {
+                border       : 1px solid #ccc;
+                border-radius: 6px;
+                overflow     : hidden;
+                height       : 40px;
+
+                input {
+                    outline         : none;
+                    padding         : 0 10px;
+                    border          : none;
+                    background-color: transparent;
+                    font-size       : 12px;
+                }
+
+                button {
+                    height : 100%;
+                    width  : 40px;
+                    border : none;
+                    outline: none;
+
+
+                    &:hover {
+                        background-color: rgba(0, 0, 0, 0.1);
+                    }
+                }
+            }
+        }
+    }
+}

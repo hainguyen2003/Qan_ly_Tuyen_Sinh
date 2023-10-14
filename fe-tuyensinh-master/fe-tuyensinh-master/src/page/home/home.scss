@@ -1,0 +1,288 @@
+.home-page-wp {
+
+    .item-banner-wp {
+        height  : 60vh;
+        position: relative;
+
+        img {
+            height         : 100%;
+            width          : 100%;
+            object-fit     : cover;
+            object-position: center center;
+        }
+
+        .content-banner {
+            position        : absolute;
+            width           : 100%;
+            height          : 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            display         : flex;
+            justify-content : center;
+            align-items     : center;
+
+            &>div {
+                width : 60%;
+                margin: 0 auto;
+
+                h1 {
+                    color        : #fff;
+                    font-weight  : 700;
+                    font-size    : 50px;
+                    padding      : 10px;
+                    text-align   : center;
+                    margin-bottom: 10px;
+                }
+
+                div {
+                    display        : flex;
+                    gap            : 20px;
+                    justify-content: center;
+                    align-items    : center;
+
+                    a {
+                        color          : #fff;
+                        padding        : 10px 20px;
+                        margin         : 0;
+                        text-decoration: none;
+                        border-radius  : 6px;
+                        font-weight    : 400;
+
+                        &:first-child {
+                            border          : 2px solid #FF6631;
+                            background-color: #FF6631;
+                        }
+
+                        &:last-child {
+                            border: 2px solid #fff;
+                        }
+
+                        &:hover {
+                            opacity   : 0.8;
+                            transition: all linear .2s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .blog-home-wp {
+        padding: 20px 0;
+
+        a {
+            color          : currentColor;
+            text-decoration: none;
+        }
+
+        h2 {
+            font-weight: 600;
+            text-align : center;
+        }
+
+        .item-blog {
+            position        : relative;
+            padding         : 10px 0;
+            background-color: #fff;
+            box-shadow      : 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+            border-radius   : 10px;
+            overflow        : hidden;
+            padding-top     : 0;
+
+            img {
+                width     : 100%;
+                height    : 234px;
+                object-fit: cover;
+            }
+
+            h3 {
+                font-size         : 18px;
+                margin-top        : 14px;
+                padding           : 0 10px;
+                display           : -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow          : hidden;
+            }
+
+            .overlay {
+                position        : absolute;
+                top             : 0;
+                right           : 0;
+                bottom          : 0;
+                left            : 0;
+                width           : 100%;
+                height          : 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                display         : flex;
+                justify-content : center;
+                align-items     : center;
+                opacity         : 0;
+                transition      : all linear .3s;
+
+                button {
+                    background-color: #fff;
+                    height          : 40px;
+                    width           : 40px;
+                    border-radius   : 50%;
+                    border          : none;
+                    font-size       : 20px;
+                    outline         : none;
+                    position        : relative;
+                    transform       : translateY(150px);
+                    transition      : all linear .18s;
+
+                    &::after {
+                        content         : '';
+                        position        : absolute;
+                        display         : block;
+                        width           : 200%;
+                        height          : 200%;
+                        top             : -50%;
+                        left            : -50%;
+                        background-color: #fff;
+                        display         : block;
+                        animation       : FadeIn 1.8s infinite;
+                        border-radius   : 50%;
+                    }
+
+                    &::before {
+                        content         : '';
+                        position        : absolute;
+                        display         : block;
+                        width           : 200%;
+                        height          : 200%;
+                        top             : -50%;
+                        left            : -50%;
+                        background-color: #fff;
+                        display         : block;
+                        animation       : FadeIn 1.8s infinite .5s;
+                        border-radius   : 50%;
+                    }
+                }
+            }
+
+            &:hover {
+
+                .overlay {
+                    opacity: 1;
+
+                    button {
+                        transform: translateY(0);
+                    }
+                }
+            }
+        }
+    }
+
+    .train-wp {
+        background-color   : #07294D;
+        background-image   : url('../../assets/imgs/bg.png');
+        background-size    : cover;
+        background-position: center center;
+        padding            : 40px 0;
+        color              : #fff;
+        text-align         : center;
+
+        a {
+            color          : currentColor;
+            text-decoration: none;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        .train-wp-item {
+
+            &>div {
+                margin-top: 10px;
+
+                div {
+                    display         : flex;
+                    flex-direction  : column;
+                    justify-content : center;
+                    align-items     : center;
+                    background-color: rgba(255, 255, 255, 0.25);
+                    height          : 175px;
+                    border-radius   : 10px;
+                    font-weight     : 600;
+                    box-shadow      : 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+                    cursor          : pointer;
+                    transition      : all linear .3s;
+
+                    i {
+                        font-size: 30px;
+                    }
+
+                    &:hover {
+                        background-color: #FF6631;
+                    }
+                }
+            }
+        }
+    }
+
+    .item-more-info {
+
+        h3 {
+            font-size: 24px;
+        }
+
+        img {
+            height       : 280px;
+            object-fit   : cover;
+            border-radius: 6px;
+            width        : 100%;
+        }
+
+        ul {
+            padding   : 0;
+            margin    : 0;
+            list-style: none;
+            padding   : 14px 0;
+
+            li {
+                padding: 6px 0;
+                color  : #333;
+
+                i {
+                    margin-right: 5px;
+                    display     : inline-block;
+                }
+
+                a {
+                    color             : currentColor;
+                    text-decoration   : none;
+                    display           : -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    overflow          : hidden;
+                    font-weight       : 600;
+
+                    &:hover {
+                        color: #ee4d2d;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@keyframes FadeIn {
+    0% {
+        opacity          : 0;
+        -webkit-transform: scale(0);
+        transform        : scale(0);
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity          : 0;
+        -webkit-transform: scale(1);
+        transform        : scale(1);
+    }
+}
