@@ -1,0 +1,13 @@
+Cách Chạy APP 
+	
+	- B1. Code Tại Link GIT: https://github.com/hainguyen2003/Quan_ly_Tuyen_Sinh
+	- B2. Dùng Câu Lệnh CD để đi vào các thư mục tương ứng VD: FE và BE
+	- B3. Thực Hiện Mở terminal Và Tải Xuống Các Gói Cần Thiết Với Câu Lệnh "npm install" ( Máy tính cần có Node.js (cài bản LTS) cài tại đây https://nodejs.org/en )
+	- B4. Đối Với Backend:
+		* Cách 1 là dump file cơ sở dữ liệu có sẵn ở git (dulieumau.sql) vào mysql
+		* Run câu lệnh tại terminal thu mục BE : "npx sequelize-cli db:migrate" (Tài Liệu :https://sequelize.org/docs/v6/other-topics/migrations/)
+	- B5. Tại Terminal Của 2 Thư Mục chạy câu lệnh để start app "npm run dev"
+	
+
+
+				Em cám ơn thầy !!!
